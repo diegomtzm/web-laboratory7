@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <title>Blog Posts</title>
+    </header>
+    <body>
+        <div class="posts">
+            <h1>All blog posts</h1>
+            <ul id="blogPosts">
+
+            </ul>
+        </div>
+        <div class="edit">
+            <form id="postForm">
+                <h2>New blog post</h2>
+                <fieldset>
+                    Title: <input type="text" id="newTitle"> 
+                    Content: <textarea id="newContent"> </textarea>
+                    Author: <input type="text" id="newAuthor">
+                    Date: <input type="text" id="newDate">
+                    <input type="submit" id="postButton" value="Post">
+                    <p class="postError"></p>
+                </fieldset>
+            </form>
+            <form id="putForm">
+                <h2>Update blog post</h2>
+                <fieldset>
+                    Id: <input type="text" id="updateId"> <br>
+                    Title: <input type="text" id="updateTitle"> 
+                    Content: <textarea id="updateContent"> </textarea> <br>
+                    Author: <input type="text" id="updateAuthor">
+                    Date: <input type="text" id="updateDate">
+                    <input type="submit" id="putButton" value="Update">
+                    <p class="putError"></p>
+                </fieldset>
+            </form>
+            <form id="deleteForm">
+                <h2>Delete blog post</h2>
+                <fieldset>
+                    Id: <input type="text" id="deleteId">
+                    <input type="submit" id="postButton" value="Delete">
+                    <p class="deleteError"></p>
+                </fieldset>
+            </form>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
